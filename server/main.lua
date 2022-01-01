@@ -71,8 +71,6 @@ QBCore.Functions.CreateCallback('vehiclekeys:server:CheckOwnership', function(so
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local isowner = CheckOwner(plate, Player.PlayerData.citizenid)
-    print(plate)
-    print(isowner)
     cb(isowner)
 end)
 
